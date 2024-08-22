@@ -22,6 +22,11 @@
      //  phéo chia nguyên
      % phép chia lấy phần dư
 
+------------------------------------------Toán tử  --------------------------------------
+     and :  sử dụng kết hợp điều kiện cả hai  cùng đúng thì đúng.
+     or  : Sử dụng  kết hợp điều kiện một trong hai  đúng là đc
+     not : là điều kiện phủ định (true --> False |  False --> True)
+
 -----------------------------------------------------------------------------------------
      int() : kiểu số nguyên
      float(): kiểu số thực
@@ -31,7 +36,11 @@
      - pow({Số1},{Số2}) : Cho phép bạn tính số mũ
      - round({số_thập_phân}, {lấy_sau_số_phẩy}) :  cho  phép bạn lấy số thập phân
      - :.2f : Làm tròn sau hai chữ số thập phân(* Lưu ý:  2f chỉ được dùng trực tiếp khi in ra)
-
+     - format() :Định dạng ở 2 số thập phân
+               <!-- Vd  format 
+                         txt = "For only {price:.2f} dollars!"
+                         print(txt.format(price = 49))
+               -->
 ```python
           # //////////  pow
                print(pow(2,3))
@@ -47,21 +56,34 @@
 
 ////////////////////////////////////////////// Vòng lặp ///////////////////
     
-     - for x  in  range({Số_vòng_lặp}) : Vòng lặp
+     - for x  in  range({Start},{Stop},{step}) : Vòng lặp
      - for x in  y : lặp  trong arr 
      - for x  in enumerate(y) :  lấy chỉ số index và lặp lại trong array
 
 
 ```python
+     # Lặp vòng lặp khi  biết trước số vòng lặp
+          # step
           for x in range(3):
                print(f'Vòng lặp:{x}')
-          # ==> KQ: lặp  lại 3 lần
+               # ==> KQ: lặp  lại 3 lần
           arr=[2,3,4]
+          # ///// start, stop
+               for x in range(1,3):
+                    print(f'Vòng lặp:{x}')
+                    # ==> KQ: lặp  lại 3 lần
+               arr=[2,3,4]
+          # ///// start, stop,step
+               for x in range(1,3,1):
+                    print(f'Vòng lặp:{x}')
+                    # ==> KQ: lặp  lại 3 lần
+               arr=[2,3,4]
+     # Lặp vòng lặp không biết vòng lặp nhất định
           for x in arr:
                print(f'Vòng lặp Arr:{x}')
-          # ==> KQ: lặp  lại 3 lần in ra lần lượt các số trong mảng
+               # ==> KQ: lặp  lại 3 lần in ra lần lượt các số trong mảng
           
-          # lặp  và lấy chỉ số index 
+     # lặp  và lấy chỉ số index 
           fruits = ['apple', 'banana', 'cherry']
           for index, fruit in enumerate(fruits):
                print(f"Index: {index}, Fruit: {fruit}")
@@ -88,11 +110,33 @@
 
 ////////////////////////////////////////////// Câu điều kiện  ///////////////////
      if( a==b): 
-     <!-- Cho phép bạn kiểm tra -->
-
-
+     <!-- Cho phép bạn kiểm tra điều kiện -->
+     elif ( a==c):
+     <!-- Cho phép bạn kiểm tra trường hợp trong khi điều kiện sai -->
+     else:
+     <!-- Trường hợp else là trường hợp sai -->
+     pass 
+     <!--  Hiểu đơn giản nó cho  phép ta để trống vị trí đó nếu chưa điền gì vào trong đó -->
 
 ////////////////////////////////////////////// Array (mảng arr)   ///////////////////
+     
+     Arr : là kiểu mảng được khai báo.
+     len() : kiểm tra độ dài của mảng,  của kí tự....
+     append() : Thêm phần tử vào mảng
+     insert() : Thêm phần tử vào trong mảng vào một vị trí bất kì
+     extend() : Thêm một mảng khác vào cuối danh sách phần tử trong mảng trước đó
+     pop() : Xóa phần tử
+     remove() : Cũng là xóa phần tử (có thử sử dụng một trong hai  để xóa phần tử)
+     clear()  :  Xóa bỏ tất cả trong mảng
+     count()  : Đếm số lần xuất hiện trong mảng
+     index()  : Đếm chỉ số trong mảng 
+     reverse(): Đảo ngược mảng trong phần tử
+     sort()   : Sắp xếp các phần tử trong mảng
+![Vd: Sử dụng các thuộc tính trong python](./tk_hàm_thuộc_tính.py) link : https://www.w3schools.com/python/python_arrays.asp
 
+//////////////////////////////////////////////  Json object   ///////////////////
 
-////////////////////////////////////////////// Objeay (json object)   ///////////////////
+////////////////////////////////////////////// Hàm def + object- class   ///////////////////
+
+////////////////////////////////////////////// date   ///////////////////
+////////////////////////////////////////////// File   ///////////////////

@@ -50,22 +50,69 @@
 # for  ob in  so:
 #      print(ob['1'])
 
-nhap=23
-color_map = {
-        0: "xanh lá cây",
-        11: "đỏ" if nhap % 2 == 0 else "đen",
-        19: "đen" if nhap % 2 == 0 else "đỏ",
-        29: "đỏ" if nhap % 2 == 0 else "đen"
-     }
 
-for start_range in color_map:
-     print(start_range)
-     # print(start_range <= nhap <= start_range + 7)
-     print(color_map[start_range])
-     # if start_range <= nhap <= start_range + 7:
-          # print(color_map[start_range])
 
+
+
+
+# nhap=23
+# color_map = {
+#         0: "xanh lá cây",
+#         11: "đỏ" if nhap % 2 == 0 else "đen",
+#         19: "đen" if nhap % 2 == 0 else "đỏ",
+#         29: "đỏ" if nhap % 2 == 0 else "đen"
+#      }
+# for start_range in color_map:
+#      print(start_range)
+#      print(start_range <= nhap <= start_range + 7)
+#      print(color_map[start_range])
+#      if start_range <= nhap <= start_range + 7:
+#           print(color_map[start_range])
 # print("Lỗi người dùng!")
 
 
-# https://gemini.google.com/app/a774d95ed65d76e7?hl=vi
+# arr=['0','I','II','III','IV','V','VI','VII','VIII','IX','X','XI','XII']
+
+# nhap=int(input('Nhap: '))
+# if(len(arr)>=nhap>=1):
+#      print(f'So la Ma: [{arr[nhap-1]}]')
+# else:
+#      print(f'Nhap khong hop le! ')
+     
+
+
+# tuoi=int(input('tuoi: '))
+# # tuoi=10
+# ob={
+#      0:'so sinh' if tuoi else 'deo  co',
+#      1: 'tre em' if tuoi  else 'khog biet',
+#      13: 'thieu nien' if tuoi else 'khong biet',
+#      20: ' nguoi  lon' if tuoi else 'khong phai ng lon',
+# }
+# for x  in ob:
+#      # print(x<=tuoi<=x+7)
+#      if x<=tuoi <=x+7:
+#           print(ob[x])
+#           break
+
+
+# mau1=input('Mau1:')  
+# mau2=input('Mau2:')  
+# arr=['tim','cam','xanh la cay','blue']
+# if mau1=='xanhduong' and  mau2=='do' :
+#      print(arr[0])
+# elif mau1=='do' and mau2=='vang':
+#      print(arr[1])
+# elif mau1=='xanh' and mau2=='vang':
+#      print(arr[2])
+# else:
+#      print('buoi ')
+     
+mau1=input('mau').lower()
+mau2=input('mau').lower()
+ob={
+     ('nam','tung'): 'vang',
+     ('xanh','do'):'tim', 
+     ('vang','tim'):'cam',
+}
+

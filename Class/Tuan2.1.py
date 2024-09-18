@@ -49,4 +49,27 @@ def bai9():
       print('Loi nguoi  dung!')
         
         
-bai9()
+def bai12():
+  tong=0; giam=0
+  mua=int(input('So sl: '))
+  tong=mua*99;
+  if(19<=mua>=10):
+    giam=tong-(tong*0.1)
+  elif 49<=mua>=20:
+    giam=tong-(tong*0.2)
+  elif 99<=mua>=50:
+    giam=tong-(tong*0.3)
+  elif mua>=100:
+    giam=tong-(tong*0.4)
+  else:
+    giam='Khong co Sale!'
+  print(f'Tong so tien: {tong}\nSau giam gia: {giam}')
+# bai12();
+
+def bai16():
+  nam=int(input("Nhap nam: "));
+  if(nam%100==0 or nam%4==0):
+    print(f'Thang hai nam {nam} co 29 ngay')
+  else:
+    print(f'Thang hai nam {nam} co 28 ngay')
+

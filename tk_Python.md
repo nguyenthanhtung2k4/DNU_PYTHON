@@ -13,7 +13,8 @@
            - Trong python cho phép bạn dùng chỉ số âm ( arr[-1])
 
 
-////////////////////////////////////////////// Các Hàm quan trọng /////////////////// - isinstance(<item>,<kiểu>) : cho phép bạn kiểm tra có phải số cần kiểu không.
+////////////////////////////////////////////// Các Hàm quan trọng /////////////////// 
+          - isinstance(<item>,<kiểu>) : cho phép bạn kiểm tra có phải số cần kiểu không.
 
 ```python
                # Kiểm tra xem một số có phải là số nguyên không
@@ -30,7 +31,6 @@
 ```python
                     row_count = sum(1 for _ in reader) # doc file trong dem so dong ,  cung co the tinh tong
 ```
-          -sreach() :  Tìm kiếm chuỗi 
 
 
 
@@ -41,14 +41,48 @@ https://gemini.google.com/app/055b30eb7b1b185e?hl=vi
 
 
 
+//////////////////////////////////////////////String  ///////////////// 
+          - string(<start> , <end> , <step>) : Cắt chuỗi
+          - in : Tìm kiếm chuỗi trả về true false
 
+```python
+          # string
+               a='0123456789'
+               print(a[3:6])
+          #  in
+               a='thanh tung tim kiem'
+               a1='tim kiem'
+               b= a1 in a
+               print(b) # true
+```
 
-
-
-
+          - capitalize() : Viết hoa chữ cái đầu tiên
+          - upper() : Viết hoa toàn bộ 
+          - lower() : Viết thường toàn bộ
 
 
           - split() : Tách các chuỗi thành một chuỗi nhỏ
+          - join()  : Thêm chuỗi 
+          - replace(): Thay thế chuỗi
+          - find() : tìm vị trí xuất hiện đầu tiên trong chuỗi
+          - startswith() : Kiểm tra chuỗi có bắt đầu bằng chuỗi con cụ thể không
+          - endswith() : Kiểm tra xem chuỗi có kết thúc bằng chuỗi con cụ thể không
+          - count() : Đếm số lần
+          - 
+
+
+     
+          -isalnum() : True khi string là cả số và chữ
+          -isalpha() : True khi string là a-z|False không phải alpha a-z
+          -isdigit() : Trả về true khi string đó là số |  False string là số
+          -islower() : True khi tất cả string trong chuỗi chữ thường | False là không phải chữ thường
+          -isspace() : True khi tất cả string là khoảng trắng | False ngươc lai
+          -isupper() : True khi tất cả string trong chuỗi chữ hoa | False là không phải chữ hoa
+     
+     ----------------------------Ham nang cao ----------------
+
+          -sreach() :  Tìm kiếm chuỗi 
+          - map() : Cho phép bạn  chuyển đổi dữ liệu dàn list và kiểu dữ liệu khác ...
           - re.findallP(<CanTim> , <Sring>) : Tìm số lần xuất hiện trong một chuỗi
 
           - re.finditer(<Cần_tìm> , <String> ) : Tìm kiếm lọc ra các số.....
@@ -172,14 +206,27 @@ else:
 pass
 <!--  Hiểu đơn giản nó cho  phép ta để trống vị trí đó nếu chưa điền gì vào trong đó -->
 
-////////////////////////////////////////////// List (array list) /////////////////// - list() : Cho phép bạn tạo danh sách trong python
-: [<start>:<end>] ==> cho phép bạn lát cắt trong python
-: [<item>] ==> Lấy ví trị trong list
-: [<vitri>::<step>] ==> Cho phép bạn bắt đầu vị trí và lấy trong danh sách - del(<item>) : Xóa phần tử trong list - append(<item>) : Thêm vào trong list - insert(<index>,<item>) : THêm một phần tư vào một vị trí được chỉ định và các chỉ số khác sẽ đc +1 <item> - sort() : Sắp xếp theo thứ tự tăng dần - remove(<giaTriChoTruoc>) : Xóa phần tử được giá trị cho trước - pop(<item>) : Xóa phần tư tại vi tri truyèn vao - reverse() : đảo ngược danh sách list - clear() : Xóa tất cả các phần tử
+     ////////////////////////////////////////////// List (array list) /////////////////// 
+     
+     - list() : Cho phép bạn tạo danh sách trong pythonv (  sử dụng  giống như arr)
+     - Khai báo nó  bằng []
+               : [<start>:<end>] ==> cho phép bạn lát cắt trong python
+               : [<item>] ==> Lấy ví trị trong list
+               : [<vitri>::<step>] ==> Cho phép bạn bắt đầu vị trí và lấy trong danh sách 
+          - del(<item>) : Xóa phần tử trong list - append(<item>) : Thêm vào trong list 
+          - insert(<index>,<item>) : THêm một phần tư vào một vị trí được chỉ định và các chỉ số khác sẽ đc +1 <item> 
+          - sort() : Sắp xếp theo thứ tự tăng dần 
+          - remove(<giaTriChoTruoc>) : Xóa phần tử được giá trị cho trước 
+          - pop(<item>) : Xóa phần tư tại vi tri truyèn vao 
+          - reverse() : đảo ngược danh sách list - clear() : Xóa tất cả các phần tử
 
-![Vd:Su_dung_list](./tk_list.py)
+![Vd:Su_dung_list](./tk_Hàm_List.py)
 
-////////////////////////////////////////////// Tuple ///////////////////
+////////////////////////////////////////////// tuple ///////////////////
+     -  Sử dụng tuple cho  phép bạn không thay đổi được giá trị.
+     - Khai báo nó bằng  dấu ()
+          
+![Vd:Sư dung Hàm_tuple](./tk_Hàm_Tuple.py)
 
 ////////////////////////////////////////////// Array (mảng arr) ///////////////////
 
@@ -200,7 +247,24 @@ pass
 
 ===> Sự khác nhau của list và array: + List: cho phép bạn thêm được nhiều kiểu dữ liệu khác nhau trong cùng một list. Chạy chậm hơn + Array: Lưu trữ đc 1 kiểu dữ liệu trong 1 arays. Chạy nhanh hơn list
 
-////////////////////////////////////////////// Json object ///////////////////
+////////////////////////////////////////////// dicnation (gần như json ) ///////////////////
+          - Sử dụng bằng {} |  ngoài ra nó cho  phép bạn  thay  đổi được giá trị  của nó
+          - get() : Lấy giá trị trong tử điện
+          - set() : 
+          - update():
+          - not in : Kiểm tra  không tồn tại
+          - in Kiểm tra có tồn tại  k.
+          - values() : lấy key
+          - item() : Lấy cả khóa và giá trị
+          - len () : Lấy về số lượng phần tử trong Diacnation
+          - pop():
+          - popitem()
+          - del()
+          - clear()
+
+////////////////////////////////////////////// json (gần như dicnation ) ///////////////////
+
+
 
 ////////////////////////////////////////////// Hàm def(function) + object- class ///////////////////
 def <dặt_tên_hàm> (<tham_chieu>):
@@ -233,7 +297,16 @@ def <dặt_tên_hàm> (<tham_chieu>):
 
 ![VD: Sử dụng Supertrong python](./tk_Class_OPP_Super.py)
 
-////////////////////////////////////////////// Module Random /////////////////// - random.randrange(start, stop, step): Tạo số nguyên ngẫu nhiên trong một khoảng với bước nhảy nhất định. - random.random(): Ngẫu nhiên trong khoảng từ 0.0 đến 1.0 (không bao gồm 1.0) - random.uniform(a, b): Tạo số thực ngẫu nhiên trong khoảng (a, b). - random.choice(seq): Chọn ngẫu nhiên một phần tử từ một chuỗi, danh sách, hoặc tuple. - random.randint(a, b): Tạo ra một số nguyên ngẫu nhiên trong khoảng từ a đến b - random.shuffle(x): Trộn ngẫu nhiên các phần tử trong một danh sách. - random.sample(population, k): Chọn ngẫu nhiên k phần tử không trùng lặp từ một tập hợp (population). - random.seed(a): Thiết lập giá trị số ngẫu nhiên. Giúp bạn có thể tái tạo lại cùng một dãy số ngẫu nhiên. - random.gauss(mu, sigma): Tạo số ngẫu nhiên theo phân phối chuẩn.
+////////////////////////////////////////////// Module Random /////////////////// 
+     - random.randrange(start, stop, step): Tạo số nguyên ngẫu nhiên trong một khoảng với bước nhảy nhất định. 
+     - random.random(): Ngẫu nhiên trong khoảng từ 0.0 đến 1.0 (không bao gồm 1.0) 
+     - random.uniform(a, b): Tạo số thực ngẫu nhiên trong khoảng (a, b). 
+     - random.choice(seq): Chọn ngẫu nhiên một phần tử từ một chuỗi, danh sách, hoặc tuple. 
+     - random.randint(a, b): Tạo ra một số nguyên ngẫu nhiên trong khoảng từ a đến b 
+     - random.shuffle(x): Trộn ngẫu nhiên các phần tử trong một danh sách. 
+     - random.sample(population, k): Chọn ngẫu nhiên k phần tử không trùng lặp từ một tập hợp (population). 
+     - random.seed(a): Thiết lập giá trị số ngẫu nhiên. Giúp bạn có thể tái tạo lại cùng một dãy số ngẫu nhiên. 
+     - random.gauss(mu, sigma): Tạo số ngẫu nhiên theo phân phối chuẩn.
 
      ==> Tham khảo: Moldum RanDom() : https://www.w3schools.com/python/module_random.asp
 

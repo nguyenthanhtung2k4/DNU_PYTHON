@@ -1,2 +1,0 @@
-tìm hiểu  try  expect
-tìm hiểu  tuple  arr,  và list python 

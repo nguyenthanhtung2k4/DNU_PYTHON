@@ -1,0 +1,6 @@
+tìm hiểu  try  expect các chức năng ngoại lệ
+
+tim hieu  json và sự khác nhau  của Dicanation  trong python 
+link tham khao json: 
+https://gemini.google.com/app/ecd96d814cd4465b?hl=vi
+note lại  cách sử dụng json  vào tk_python.md

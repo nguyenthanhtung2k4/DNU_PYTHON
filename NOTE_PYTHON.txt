@@ -1,5 +1,5 @@
 tìm hiểu  try  expect các chức năng ngoại lệ
-
+tìm hiểu về SET  trong python cho  tôi.
 tim hieu  json và sự khác nhau  của Dicanation  trong python 
 link tham khao json: 
 https://gemini.google.com/app/ecd96d814cd4465b?hl=vi

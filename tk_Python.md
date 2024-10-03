@@ -249,8 +249,8 @@ pass
 
 ////////////////////////////////////////////// dicnation (gần như json ) ///////////////////
           - Sử dụng bằng {} |  ngoài ra nó cho  phép bạn  thay  đổi được giá trị  của nó
-          - get() : Lấy giá trị trong tử điện
-          - set() : 
+          - get() : Lấy giá trị trong tử điển
+          - set() :  trả về kiểu set (Xem bên dưới ) 
           - update():
           - not in : Kiểm tra  không tồn tại
           - in Kiểm tra có tồn tại  k.
@@ -261,10 +261,70 @@ pass
           - popitem()
           - del()
           - clear()
-
+```python
+               d={
+                    1:"Thanhtung",
+                    2:"Class"
+               }
+               print(d[1])# output  "Thanhtung
+```
 ////////////////////////////////////////////// json (gần như dicnation ) ///////////////////
 
 
+////////////////////////////////////////////// set ///////////////////
+          - Nó tự động loại bỏ lặp phần tử  trong Set
+          - Sử dụng bằng {}
+                         + len() : Lấy số phần tử
+                         + add() : Thêm phần tử
+                         + remove(<Giá_trị>) : Xóa một giá trị nòa đó
+                         + discard(<Giá_trị>):  Xóa phần tử và không  báo lỗi khi  k tìm thấy
+                         + in  : Kiêm tra có tồn tại  không  ( True | False)
+                         + not in   : Kiêm tra không tồn tại  không  ( True | False)
+          - Phép toán trong Set()
+                    - Phép giao: chỉ hiện   a và b xuất hiện cùng nhau thì hiện ra
+                               &
+                               <Tập_hợp_A>.intersection(<tập_hợp_B>)
+                    - Phép hợp :  Cho phép bạn gộp  a và b vào một set
+                               | : Phép hợp của hai phần tử
+                               <Tập_hợp_A>.union(<tập_hợp_B>) : phép hợp của hai phần tử
+                    - Phép Trừ : Chỉ thuộc A và không không thuộc b (  có hai  cách sử dụng)
+                               - : 
+                               <Tập_hợp_A>.difference(<tập_hợp_B>) 
+                    - Phép đối xứng : # Phần tử chỉ có trong một trong hai set, không có trong cả hai
+                               ^ : Phép đối xứng 
+                               <tập_hơpA>.symmetric_diference(<Tập_hơpB>)
+
+                   
+
+          == > 
+```python 
+          # VD1
+               set1={1,2,1,3,4}
+               print(set1)# ouput 1,2,3,4
+          # VD2
+               list1=[1,2,4,5,1]
+               print(set(list1))# ouput {1,2,4,5}
+          #  ham hay dung 
+               my_set.add(5)  # Thêm phần tử 5 vào set
+               
+               my_set.remove(3)  # Xóa phần tử 3 khỏi set (nếu không tồn tại sẽ báo lỗi)
+               my_set.discard(6)  # Xóa phần tử 6 nếu có, không báo lỗi nếu không tồn tại
+     #  Phép toán trong Set()
+          # Phép hợp
+               set1 = {1, 2, 3}
+               set2 = {3, 4, 5}
+               union_set = set1.union(set2)  # Kết quả: {1, 2, 3, 4, 5}
+          #  phép giao
+               intersection_set = set1.intersection(set2)  # Kết quả: {3}
+          # phép hiẹu  ( phép trừ)
+               difference_set = set1.difference(set2)  # Phần tử có trong set1 nhưng không có trong set2
+               # Kết quả: {1, 2}
+          # phép đối xứng
+               symmetric_difference_set = set1.symmetric_difference(set2)
+               # Phần tử chỉ có trong một trong hai set, không có trong cả hai
+               # Kết quả: {1, 2, 4, 5}
+
+```
 
 ////////////////////////////////////////////// Hàm def(function) + object- class ///////////////////
 def <dặt_tên_hàm> (<tham_chieu>):
@@ -385,6 +445,7 @@ File sử dụng bằng.csv: - khai báo thư viện: import csv (pip install cs
 ```
 
 ![Vd:Sử_dụng_csv](./tk_File_csv.py)
+        
 
 ////////////////////////////////////////////// try + except ///////////////////
 
@@ -398,6 +459,8 @@ File sử dụng bằng.csv: - khai báo thư viện: import csv (pip install cs
 
 
 ```
+
+
 ////////////////////////////////////////////// numpy ///////////////////
 ////////////////////////////////////////////// tkinner ///////////////////
 ////////////////////////////////////////////// web python ///////////////////
